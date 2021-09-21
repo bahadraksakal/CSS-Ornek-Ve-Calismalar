@@ -1,0 +1,8 @@
+h1{
+    color:green;
+    background-color: orange;
+}
+/* bütün h1 leri yeşil yaptık */
+body{
+     background-color: darkorchid; 
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            input[type=text],input[type=password]{
+                width: 100%;
+                padding: 10px;
+                border: 5px solid green;
+                border-radius: 5px;
+                color: blue;
+                background-color:coral;
+            }
+            input[type=text]:focus,input[type=password]:focus{
+                background-color: lightblue;
+                /*focus eventi iksinede eklenmelidir*/
+                 /*focus eventi tıklayınca çalışır.*/
+            }
+            .myClass{  /*class oluştururken başına . atılır*/
+                color: red;
+                background-color: aquamarine;
+            }
+            p.someclass{
+                /*sadece p lerde kullanılabilen bir class*/
+                color:  darkblue;
+                background-color: lightcoral;
+                text-align: center;
+            }
+            #ad{
+                /*id si ad olan için özel css */
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        AD: <input id="ad" type="text"> <br/>
+        SOYAD: <input type="text"><br/>
+        ŞİFRE: <input type="password"><br/>
+        <input  type="submit"><br/>
+        <br/>
+        <h1 class="myClass">Bahadır Aksakal</h1>
+        <br/>
+        <p class="someclass">Bahadır AKSAKAL</p>
+        <hr/><!-- comment -->
+        <a href="index.html">Ana Sayfa</a>
+    </body>
+</html>

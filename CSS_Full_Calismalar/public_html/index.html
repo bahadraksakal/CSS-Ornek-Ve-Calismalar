@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CCS eğitimi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- rel ile tür verilir href ile dosya yolu -->
+        <style>
+            /* bu satıra css dosyamızın içindekileri yazabiliriz*/ 
+            div{
+                border: 2px solid blue; /*solid  düz çizgi , dashed uzun kesikli çizgi*/
+                margin-top: 100px; /*yukarıdan 100 px alta in demek*/
+                margin-left: 50px; /*soldan  - sayfa başından 50px uzakta*/ 
+                margin-right: 200px; /*sağdanda 200 px uzakta sığmazsa oto alt satır yapar.*/
+                margin-bottom: 300px; /*aşşağıdan 300 px yüksekte*/
+                /*bu kullanımda yukarı ve sol taraf baskındır*/
+                background-color: gray;
+                padding: 25px; /*borderin içindeki yazının border a uzaklığı padding-left gibi farklı şeyleride vardır*/
+                
+            }
+            table{
+                border-collapse: collapse; /*tablo hücreleri arasındaki boşlukları yok eder*/
+                width:50%; /*yüzde sona yazılır ve bu tarz kullanımlar çoook eskide kaldı*/
+                
+            }
+            table,th,td{
+                border: 1px solid deeppink;
+                
+            }
+            th{
+                height: 30px; 
+            }
+            td{
+                height: 60px;
+                text-align: center; /*ortaya hizala*/
+                vertical-align: bottom; /*top en tepeye yapıştırır*/
+                padding-left: 90px; /*soldan boşluk atıp sağa yanaştırır*/
+            } /*horizental yatay - vertical dikey*/
+            tr:hover{
+                background-color: cyan; /*mouse geldiği an renk değişir fakat nth-child bunu override eder.*/
+            }
+            tr:nth-child(even){ /*even çift demek*/
+                background-color: grey;
+            }
+            tr:nth-child(odd)/*odd tek demek*/{
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>css öğreniyorum</h1>
+        <h2 style="color: brown">csss 2</h2> <!-- style tagin içinde de kullanabiliriz 3 şekilde style kullanılabilir. -->
+        <!-- kurumsal projelerde tag içinde style kullanımı ve head deki style kullanımı hoş değil -->
+        <!-- tavisye dosyalar üzeriden çalışmak şeklindedir -->
+        <div>
+            Bilgiye ulaşmanın hem çok kolay hem de çok zor olduğu şu son zamanlarda,
+            insanların bilgi ihtiyacını karşılamak için ille de basılı kaynaklara yönelmelerini
+            beklemek oldukça yanlış bir düşünce biçimidir. Bilgi patlaması teriminin tam anlamıyla
+            karşıladığı bu bilgi çokluğu içerisindeki karmaşa, bilgiye olan talebin büyüklüğünü anlatmakla
+            beraber; doğru bilgiye ulaşmanın zorluğunu da belirtmiş oluyor.
+        </div>
+        <table>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Şehir</th>
+            </tr>
+            <tr>
+                <td>Bahadır</td>
+                <td>Aksakal</td>
+                <td>Bursa</td>
+            </tr>
+            <tr>
+                <td>Nergis</td>
+                <td>Arat</td>
+                <td>Muğla</td>
+            </tr>
+        </table>
+        <hr/>
+        <a href="inputlar.html">input tag ile çalışmalar</a>
+    </body>
+</html>
